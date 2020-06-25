@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-sweet-alert",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "SweetAlert library for NativeScript Android.",
 	"main": "sweet-alert",
 	"typings": "index.d.ts",

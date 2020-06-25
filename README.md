@@ -12,7 +12,10 @@ Based on:
 tns plugin add nativescript-sweet-alert
 ```
 
-![Sample Android](screenshots/alert-android.gif)
+<img src="android_example.gif" width="400">
+
+
+
 
 
 # Android Specifications
@@ -61,6 +64,11 @@ SweetAlert.showError(options).then(value => {
 - `showCheckbox(options: ShowCheckbox): Promise<any>`
 
 
+## How can I change the colors?
+
+App_Resources/Android/src/main/res/values/colors.xml add to [Color Properties](https://github.com/F0RIS/sweet-alert-dialog/blob/master/library/src/main/res/values/colors.xml)
+
+
 ## Why the TNS prefixed name?
 
 `TNS` stands for **T**elerik **N**ative**S**cript
@@ -75,6 +83,8 @@ To avoid confusion with iOS native classes, `TNS` is used instead.
 Need extra help getting these SweetAlert working in your application? Check out these tutorials that make use of the plugin:
 
 [SweetAlert in a NativeScript Core Demo](https://github.com/NazimMertBilgi/nativescript-sweet-alert/blob/master/demo/app/home/home-page.ts)
+
+[SweetAlert in a NativeScript Angular Demo](https://github.com/NazimMertBilgi/nativescript-sweet-alert/blob/master/demo-angular/src/app/home/home.component.ts)
 
 ## License
 
