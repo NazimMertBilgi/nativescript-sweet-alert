@@ -1,7 +1,14 @@
 <ActionBar>
-    <Label text="Home"></Label>
+    <Label text="NativeScript SweetAlert"></Label>
 </ActionBar>
 
-<GridLayout>
-    <!-- Add your page content here -->
+<GridLayout rows="*,*,*,*,*,*,*,*" verticalAlignment="top">
+    <Button row="0" text="SweetAlert NORMAL" (tap)="showNormal()"></Button>
+    <Button row="1" text="SweetAlert ERROR" (tap)="showError()"></Button>
+    <Button row="2" text="SweetAlert SUCCESS" (tap)="showSuccess()"></Button>
+    <Button row="3" text="SweetAlert WARNING" (tap)="showWarning()"></Button>
+    <Button row="4" text="SweetAlert CUSTOM IMAGE" (tap)="showCustomImage()"></Button>
+    <Button row="5" text="SweetAlert DARK MODE" (tap)="showDarkMode()"></Button>
+    <Button row="6" text="SweetAlert TEXTVIEW" (tap)="showText()"></Button>
+    <Button row="7" text="SweetAlert CHECKBOX" (tap)="showCheckbox()"></Button>
 </GridLayout>

@@ -1,7 +1,7 @@
 {
 	"name": "nativescript-sweet-alert",
-	"version": "1.0.0",
-	"description": "Your awesome NativeScript plugin.",
+	"version": "1.0.3",
+	"description": "SweetAlert library for NativeScript Android.",
 	"main": "sweet-alert",
 	"typings": "index.d.ts",
 	"nativescript": {
@@ -34,11 +34,12 @@
 		"NativeScript",
 		"JavaScript",
 		"Android",
-		"iOS"
+		"iOS",
+		"SweetAlert"
 	],
 	"author": {
-		"name": "Your Name",
-		"email": "youremail@yourdomain.com"
+		"name": "Nazım Mert Bilgi",
+		"email": "nmbjobs@outlook.com.tr"
 	},
 	"bugs": {
 		"url": "https://github.com/NazimMertBilgi/nativescript-sweet-alert/issues"
