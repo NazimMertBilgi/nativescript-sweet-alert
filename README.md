@@ -1,40 +1,81 @@
-# nativescript-sweet-alert
+SweetAlert library for NativeScript Android.
 
-Add your plugin badges here. See [nativescript-urlhandler](https://github.com/hypery2k/nativescript-urlhandler) for example.
+Based on:
 
-Then describe what's the purpose of your plugin. 
+- Android [F0RIS/sweet-alert-dialog](https://github.com/F0RIS/sweet-alert-dialog)
 
-In case you develop UI plugin, this is where you can add some screenshots.
+# Install
 
-## (Optional) Prerequisites / Requirements
+### NativeScript 6x
 
-Describe the prerequisites that the user need to have installed before using your plugin. See [nativescript-firebase plugin](https://github.com/eddyverbruggen/nativescript-plugin-firebase) for example.
-
-## Installation
-
-Describe your plugin installation steps. Ideally it would be something like:
-
-```javascript
+```bash
 tns plugin add nativescript-sweet-alert
 ```
 
-## Usage 
+![Sample Android](screenshots/alert-android.gif)
 
-Describe any usage specifics for your plugin. Give examples for Android, iOS, Angular if needed. See [nativescript-drop-down](https://www.npmjs.com/package/nativescript-drop-down) for example.
-	
-	```javascript
-    Usage code snippets here
-    ```)
 
-## API
+# Android Specifications
 
-Describe your plugin methods and properties here. See [nativescript-feedback](https://github.com/EddyVerbruggen/nativescript-feedback) for example.
-    
-| Property | Default | Description |
-| --- | --- | --- |
-| some property | property default value | property description, default values, etc.. |
-| another property | property default value | property description, default values, etc.. |
-    
+#### Usage Examples
+
+NOTE: "options" may vary according to each method.
+
+```js
+import { SweetAlert } from 'nativescript-sweet-alert';
+import { ShowSuccess , ShowError } from 'nativescript-sweet-alert/classes';
+
+
+// showSuccess
+const options: ShowSuccess = {
+    text: "Hello",
+    contentText: "Alert Content Text",
+    confirmButtonText: "Ok",
+    cancelButtonText: "Close"
+}
+SweetAlert.showSuccess(options).then(value => {
+ // result: true, false, CLOSED    
+});
+
+// showError
+const options: ShowError = {
+    text: "Hello",
+    contentText: "Alert Content Text",
+    confirmButtonText: "Ok",
+    cancelButtonText: "Close"
+}
+SweetAlert.showError(options).then(value => {
+ // result: true, false, CLOSED    
+});
+
+```
+
+#### NativeScript SweetAlert - Methods
+
+- `showNormal(options: ShowNormal): Promise<any>`
+- `showError(options: ShowError): Promise<any>`
+- `showSuccess(options: ShowSuccess): Promise<any>`
+- `showWarning(options: ShowWarning): Promise<any>`
+- `showCustomImage(options: ShowCustomImage): Promise<any>`
+- `showText(options: ShowText): Promise<any>`
+- `showCheckbox(options: ShowCheckbox): Promise<any>`
+
+
+## Why the TNS prefixed name?
+
+`TNS` stands for **T**elerik **N**ative**S**cript
+
+iOS uses classes prefixed with `NS` (stemming from the [NeXTSTEP](https://en.wikipedia.org/wiki/NeXTSTEP) days of old):
+https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/
+
+To avoid confusion with iOS native classes, `TNS` is used instead.
+
+## Demo
+
+Need extra help getting these SweetAlert working in your application? Check out these tutorials that make use of the plugin:
+
+[SweetAlert in a NativeScript Core Demo](https://github.com/NazimMertBilgi/nativescript-sweet-alert/blob/master/demo/app/home/home-page.ts)
+
 ## License
 
-Apache License Version 2.0, January 2004
+MIT
