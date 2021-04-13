@@ -1,8 +1,8 @@
-import * as application from "tns-core-modules/application";
-import * as types from "tns-core-modules/utils/types";
-import * as fs from "tns-core-modules/file-system";
+import * as application from "@nativescript/core/application";
+import * as types from "@nativescript/core/utils/types";
+import * as fs from "@nativescript/core/file-system";
 import { ShowCustomImage, ShowWarning, ShowSuccess, ShowError, ShowNormal, ShowText, ShowCheckbox } from "./classes";
-import { isNumber } from "tns-core-modules/utils/types";
+import { isNumber } from "@nativescript/core/utils/types";
 
 declare const cn: any;
 
