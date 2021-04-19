@@ -6,16 +6,10 @@ Based on:
 
 # Install
 
-### NativeScript 8x
+### NativeScript 6x
 
 ```bash
 tns plugin add nativescript-sweet-alert
-```
-
-### NativeScript 6x or 7x
-
-```bash
-tns plugin add nativescript-sweet-alert@1.0.4
 ```
 
 <img src="android_example.gif" width="400">
