@@ -8,7 +8,9 @@ Based on:
 
 ### NativeScript 8x
 
+```bash
 npm i @NazimMertBilgi/nativescript-sweet-alert@1.0.5
+```
 
 ### NativeScript 6x or 7x
 
