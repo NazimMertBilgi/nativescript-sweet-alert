@@ -9,13 +9,13 @@ Based on:
 ### NativeScript 8x
 
 ```bash
-npm i @NazimMertBilgi/nativescript-sweet-alert@1.0.5
+tns plugin add nativescript-sweet-alert
 ```
 
 ### NativeScript 6x or 7x
 
 ```bash
-tns plugin add nativescript-sweet-alert
+tns plugin add nativescript-sweet-alert@1.0.4
 ```
 
 <img src="android_example.gif" width="400">
